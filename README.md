@@ -1,6 +1,4 @@
-# Release_Tagmentation
-
-## Release_Tagmentation
+## Summary_Tagmentation
 
 1. Tagmentation Bins and GC%
 1. Combine Bins
