@@ -1,5 +1,5 @@
 ## Summary_Tagmentation
-
+Each of the following have their own Readme.md file for better understanding.
 1. Tagmentation Bins and GC%
 1. Combine Bins
 > * Same organism R1 + R2
