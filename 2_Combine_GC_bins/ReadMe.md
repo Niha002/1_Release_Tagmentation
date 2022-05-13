@@ -22,7 +22,7 @@ All the scripts in this directory use the similar code that achieves the followi
 
 # Scripts
 1. Same organism R1 + R2: 
-2. All R1 reads and All R2 reads: 
+2. All R1 reads or All R2 reads: 
 3. Combine all sequences in GC bins
 4. Combine all sequences unbinned
 
@@ -52,7 +52,7 @@ We want to combine them to get x_same_organism 20 respective merged bins
 > Combine syntax
 > * x_R1(20) + x_R2(20) = x_same_organism(20) 
 
-# 2. All R1 reads and All R2 reads: 
+# 2. All R1 reads or All R2 reads: 
 Here in our case from Script folder 1: [Tagmentation Bins and GC%](https://github.com/Niha002/Release_Tagmentation/tree/main/1_Tagmentation%20Bins%20and%20GC%25) we would get:
 
 For a genome x, y, z
