@@ -1,4 +1,3 @@
-## Combine Bins
 # Combine Bins
 
 ### Aim: 
