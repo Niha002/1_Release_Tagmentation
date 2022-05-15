@@ -1,4 +1,4 @@
-## Release_Tagmentation
+## 1. Tagmentation Bins and GC%
 
 ### Aim: 
 Compile the region of Tn5 enzyme activity 23bp from raw reads.
