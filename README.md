@@ -1,8 +1,20 @@
 ## Summary_Tagmentation
-Each of the following have their own Readme.md file for better understanding.
+
 1. Tagmentation Bins and GC%
 1. Combine Bins
-> * Same organism R1 + R2
-> * All R1 reads and All R2 reads
-> * Combine all sequences in GC bins
-> * Combine all sequences unbinned
+
+   a. Same organism R1 + R2
+
+   b. All R1 reads or All R2 reads
+
+   c. Combine all sequences in GC bins
+
+   d. Combine all sequences unbinned
+1. Training data NT Stats
+
+   a. Initial run whole pan genome ensemble from Step 2d
+
+   b. Run against the whole pan genome against itself from the Step 3a 
+
+   c. Fitting the curve to the data from Step 3b
+
