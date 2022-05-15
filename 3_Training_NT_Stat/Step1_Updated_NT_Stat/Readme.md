@@ -1,7 +1,9 @@
 ### Aim: 
 Makes a sequence logo to see sequence biases in Tn5 region activity and PDF for each bins, where each sequence is 23bp(7:16).
 
-Training the input data from the whole pan genome ensemble from step 2d.
+Training the input data from the whole pan genome ensemble from step 2c and 2d.
+
+Run the whole un-binned genome(pan-genome ensemble) first and run it against binned genome (increments of 5)
      
 ### Modules Needed: 
 * Matlab
@@ -10,7 +12,7 @@ Training the input data from the whole pan genome ensemble from step 2d.
 ### Files needed in the directory:
 * A,T,G,C image file .png
 * T0_func_seqlogo.m
-* Binned files from step 2d pan genome ensemble 
+* Binned files from step 2c/2d pan genome ensemble 
 
 ### Input: 
 Use the demo file in this directory which looks like
