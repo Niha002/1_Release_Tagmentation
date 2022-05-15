@@ -1,4 +1,4 @@
-# 2 Combine Bins
+## 2. Combine Bins
 1. a. Same organism R1 + R2: 
 2. b. All R1 reads or All R2 reads: 
 3. c. Combine all sequences in GC bins
