@@ -1,4 +1,4 @@
-3. Training data NT Stats
+## 3. Training data NT Stats
 
    a. Initial run whole pan genome ensemble from Step 2d
 
