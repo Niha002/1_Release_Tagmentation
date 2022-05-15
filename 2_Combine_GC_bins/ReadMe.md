@@ -1,4 +1,8 @@
-# Combine Bins
+# 2 Combine Bins
+1. a. Same organism R1 + R2: 
+2. b. All R1 reads or All R2 reads: 
+3. c. Combine all sequences in GC bins
+4. d. ombine all sequences unbinned
 
 ### Aim: 
 To combine permutation and combination of GC Bins(files or boxes of classification) for analysis.
@@ -19,12 +23,6 @@ All the scripts in this directory use the similar code that achieves the followi
 
   Based on the editor use to Ctrl find and replace option for convenience.
   > Ex. for f in ['a.txt', 'b.txt', 'c.txt']:
-
-# Scripts
-1. Same organism R1 + R2: 
-2. All R1 reads or All R2 reads: 
-3. Combine all sequences in GC bins
-4. Combine all sequences unbinned
 
 # Summary
 Example 3 organism x, y, z
