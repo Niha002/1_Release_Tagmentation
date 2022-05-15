@@ -30,9 +30,11 @@ Use the demo file in this directory which looks like
 > GCTCGGTGCACCGGTGTTCGAGC
 
 ### Run:
-Enter sequence-file name: Demo.txt 
-File contains #x sequences
-Enforce motif symmetry: Y
+>Enter sequence-file name: Demo.txt 
+>
+>File contains #x sequences
+>
+>Enforce motif symmetry: Y
 
 ### Code:
 1. Step 1 : Extracts first Subseq_length nucleotides from each read
