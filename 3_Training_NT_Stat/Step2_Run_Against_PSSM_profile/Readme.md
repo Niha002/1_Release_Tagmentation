@@ -12,7 +12,6 @@ Similar to the previous run 3a but against the PSSM profile
 * Computational biology package 
 
 ### Files needed in the directory:
-* A,T,G,C image file .png
 * T0_func_seqlogo.m
 * Binned files from step 2c/2d pan genome ensemble 
 * T0_final.mat (make sure its loaded in workspace before the run)
