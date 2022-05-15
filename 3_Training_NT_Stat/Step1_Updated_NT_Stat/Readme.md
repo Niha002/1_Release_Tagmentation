@@ -3,7 +3,7 @@ Makes a sequence logo to see sequence biases in Tn5 region activity and PDF for 
 
 Training the input data from the whole pan genome ensemble from step 2c and 2d.
 
-Run the whole un-binned genome(pan-genome ensemble) first and run it against binned genome (increments of 5)
+Run the whole un-binned genome(pan-genome ensemble) first and run the binned genome (increments of 5)
      
 ### Modules Needed: 
 * Matlab
@@ -27,9 +27,11 @@ Use the demo file in this directory which looks like
 > GCTCGGTGCACCGGTGTTCGAGC
 
 ### Run:
-Enter sequence-file name: Demo.txt 
-File contains #x sequences
-Enforce motif symmetry: Y
+> Enter sequence-file name: Demo.txt 
+>
+> File contains #x sequences
+>
+> Enforce motif symmetry: Y
 
 ### Code:
 1. Step 1 : Extracts first Subseq_length nucleotides from each read
