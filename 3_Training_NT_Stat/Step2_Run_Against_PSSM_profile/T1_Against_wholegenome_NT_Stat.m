@@ -1,23 +1,6 @@
 % MATLAB script NTStats
 
-% Obtains nucleotide-composition statistics from Illumina reads processed
-% by REVA to generate 5' extensions. Makes use of Bioinformatics Toolbox 
-% function "basecount."
-
-% Dependencies:     basecount   [           "          ]
-%                   seqprofile  [           "          ]
-%                   histogram
-%                   evfit       [Statistics and Machine Learning Toolbox]
-
-% 08/09/19  Initial version 
-% 08/10/19  Modified to generate profiles and sequence logos
-% 08/11/19  Generates 5'-subsequence profiles and similarity
-%           score distributions
-% 08/13/19  Fits score distribution to EVD 
-%           [Extreme Value Distributions]
-% 08/22/19  Corrected bug in score calculation; score distributions now
-%           fitted to Gaussian model
-% 10/21/19  Modified to read REVA data containing 5' extensions
+load('T0_final.mat')
 
 NT = ['A','C','G','T'];
 FileName = input('Enter sequence-file name: ','s');
@@ -58,26 +41,7 @@ fprintf('\n');
 
 % Generate profile, positional information matrix, and alignment score
 WtMatrix = zeros(4,MSize);
-seq = load('final.mat');
-
-% [Profile,Symbols] = seqprofile(Subseq,'Alphabet','NT');% modified profile from the .mat file* -> scoring matrix
-% if sym
-%     Profile = (Profile+flip(flip(Profile,1),2))./2;
-% end
-% scoring values i.e 23 positions depends on profile
-%s(1,:) = log2(2*Profile(1,:)/FreqAT);
-%s(2:3,:) = log2(2*Profile(2:3,:)/(1-FreqAT));
-%s(4,:) = log2(2*Profile(4,:)/FreqAT);
-% wt matrices for seq logo
-%Hn = sum(Profile.*s,1);
-%for i = 1:MSize
-    %for j = 1:4
-      %  WtMatrix(j,i) = Hn(i).*Profile(j,i);
-   % end
-%end
-
-%Generate sequence logo
-%SeqLogoFig = seqlogo_new(WtMatrix);
+seq = load('T0_final.mat');
 
 Indx = zeros(MSize,4);
 Score = zeros(N,1);
@@ -93,7 +57,7 @@ for i = 1:N
 end
 
 % Fit score distribution to Gaussian
-Gausvs = fitgmdist(Score,1);
+Gauss = fitgmdist(Score,1);
 Gauss_param(1) = Gauss.mu;
 Gauss_param(2) = Gauss.Sigma;
 
