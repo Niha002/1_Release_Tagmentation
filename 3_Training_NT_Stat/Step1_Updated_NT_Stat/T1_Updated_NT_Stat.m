@@ -75,7 +75,7 @@ for i = 1:MSize
 end
 
 %Generate sequence logo
-SeqLogoFig = seqlogo_new(WtMatrix);
+SeqLogoFig = T0_func_seqlogo(WtMatrix);
 
 Indx = zeros(MSize,4);
 Score = zeros(N,1);
