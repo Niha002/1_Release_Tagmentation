@@ -1,5 +1,7 @@
 ### Aim: 
-Makes a sequence logo to see sequence biases in Tn5 region activity and PDF for each bins, where each sequence is 23bp(7:16).
+Makes a sequence logo to see sequence biases in Tn5 region activity.
+
+MakePDF for each bins, where each sequence is 23bp(7:16).
 
 Training the input data from the whole pan genome ensemble from step 2c and 2d.
 
