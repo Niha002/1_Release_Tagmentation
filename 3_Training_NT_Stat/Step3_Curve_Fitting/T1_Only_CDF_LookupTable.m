@@ -56,3 +56,4 @@ legend;
 XData = get(gd, 'XData');
 YData = get(gd, 'YData');
 LookupTable = [XData' YData'];
+save('T_Output_LookupTable','LookupTable'); 
