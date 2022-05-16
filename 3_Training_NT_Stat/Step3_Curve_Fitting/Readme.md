@@ -5,7 +5,6 @@ Integrate the fitted curve to get the CDF and generate the lookup table.
 
 This lookup table will be used as model for prediction by linear interpolation.
 
-     
 ### Modules Needed: 
 * Matlab
 * Computational biology package 
@@ -32,12 +31,10 @@ Just run the Script with the files in the directory
 1. Step 7 : Plot functions (Histogram, PDF, CDF)
 1. Step 8 : Save the Lookup table (x,y) = (Sequence score, CDF)
 
-
 ### Output: 
-The expected output is 
+* Image of Histogram and Actual Curve Fit [T_Output_CurveFit.jpg](https://github.com/Niha002/Release_Tagmentation/blob/main/3_Training_NT_Stat/Step3_Curve_Fitting/T_Output_CurveFit.jpg)
+ 
+  ![image](https://user-images.githubusercontent.com/55808380/168681352-8d3794fb-0387-4b41-8511-5407d5387822.png)
 
-* Image of PDF: Histogram and Actual Curve Fit 
 
-  <img width="437" alt="image" src="https://user-images.githubusercontent.com/55808380/168493535-859687b2-4d28-4087-a979-44e629214f98.png">
-
-* A matfile for the prediction for step 4 using T_Output_Lookuptable.mat 
+* A matfile for the prediction for step 4 using [T_Output_LookupTable.mat](https://github.com/Niha002/Release_Tagmentation/blob/main/3_Training_NT_Stat/Step3_Curve_Fitting/T_Output_LookupTable.mat)
