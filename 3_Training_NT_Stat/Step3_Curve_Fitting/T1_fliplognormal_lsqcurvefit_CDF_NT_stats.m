@@ -30,7 +30,7 @@ FreqAT = (NT_counts(1)+NT_counts(4))/NT_total;
 WtMatrix = zeros(4,MSize);
 
 %Generate sequence logo
-SeqLogoFig = seqlogo_new(WtMatrix);
+SeqLogoFig = T0_func_seqlogo(WtMatrix);
 Indx = zeros(MSize,4);
 Score = zeros(N,1);
 
