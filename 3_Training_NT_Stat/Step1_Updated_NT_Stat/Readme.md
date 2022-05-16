@@ -62,15 +62,13 @@ Use the demo file in this directory which looks like
 1. Step 8 : Save Gaussian Parameters and scoring matrix to file
 
 ### Output: 
-The expected output for the demo run is attached as "T_Output_PSSM.jpg", "T_Output_PDF.jpg" and "T_Output_NIR(0-5)"
+The expected output for the demo run is attached as [T_Output_PSSM.jpg](https://github.com/Niha002/Release_Tagmentation/blob/main/3_Training_NT_Stat/Step1_Updated_NT_Stat/T_Output_PSSM.jpg), [T_Output_PDF.jpg](https://github.com/Niha002/Release_Tagmentation/blob/main/3_Training_NT_Stat/Step1_Updated_NT_Stat/T_Output_PDF.jpg) and [T_Output_NIR(0-5).mat](https://github.com/Niha002/Release_Tagmentation/blob/main/3_Training_NT_Stat/Step1_Updated_NT_Stat/T_Output_NIR(0-5).mat)
 * Image of PSSM: Sequence logo
   
   ![image](https://user-images.githubusercontent.com/55808380/168644334-6ec7f4fb-74b1-4873-820a-1127ad48d69b.png)
-
 
 * Image of PDF: Histogram and Gaussian fit 
   
   ![image](https://user-images.githubusercontent.com/55808380/168644509-71c64443-22cf-4c13-9c66-039963a2d123.png)
 
-
-* Matlab file s.mat: that has the fitted parameters and scoring matrix
+* Matlab file [T_Output_NIR(0-5).mat](https://github.com/Niha002/Release_Tagmentation/blob/main/3_Training_NT_Stat/Step1_Updated_NT_Stat/T_Output_NIR(0-5).mat) (s.mat) that has the fitted parameters and scoring matrix
