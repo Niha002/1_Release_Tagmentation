@@ -39,7 +39,7 @@ fprintf('%%%c%c in subseqs = %5.2f\n',NT(1),NT(4),NT_freq(1)+NT_freq(4));
 fprintf('%%%c%c in subseqs = %5.2f\n',NT(2),NT(3),NT_freq(2)+NT_freq(3));
 fprintf('\n');
 
-% Generate profile, positional information matrix, and alignment score
+% Takes in input of the profile from To_final.mat file that has the PSSM profile for pan genome ensemble
 WtMatrix = zeros(4,MSize);
 seq = load('T0_final.mat');
 
