@@ -1,8 +1,5 @@
 clc
-
 load('T0_final.mat')
-load('Histogram_xdata.mat')
-load('Histogram_ydata.mat')
 
 NT = ['A','C','G','T'];
 FileName = input('Enter sequence-file name: ','s');
@@ -62,11 +59,13 @@ if ismember (resp,['Y','y'])
     xlabel('Score');
     ylabel('Number of scores');
     
+    load('T0_Histogram.mat');
+
     binw = xdata(2)-xdata(1);
     sumhist = 0;
-    for i=1:length(xdata)
-        sumhist = sumhist + binw*ydata(i); 
-    end
+        for i=1:length(xdata);
+            sumhist = sumhist + binw*ydata(i); 
+        end
     disp(sumhist);
 
     score = linspace(xdata(1), xdata(end)); % x-axis for plotting
@@ -86,16 +85,18 @@ if ismember (resp,['Y','y'])
     q_fun = T0_func_fliplognorm(q,score);
 
     % CDF intrgrating PDF
-    for j = 1:length(score)
+    for j = 1:length(score);
         rk(j) = integral(@(s) T0_func_fliplognorm(q,s),-Inf, score(j));
     end
 
+    % plot functions
     Fig1 = figure('Name','Motif-score PDF','NumberTitle','off');
     title('Motif-score Probability Density and Cumulative Density');
     xlabel('Score Bins');
     ylabel('Number of scores');
 
     hold on;
+    set(gca,'FontSize',30);
     % Score
     bar(xdata,ydata, 'DisplayName','Scores');
     % PDF
@@ -106,8 +107,9 @@ if ismember (resp,['Y','y'])
     yyaxis right;
     gd = plot(score,rk, 'r','LineWidth',2.0, 'DisplayName','CDF');
     ylabel('CDF');
+
     hold off;
-    legend
+    legend;
 
     % Lookup table (x,y) = (score,cdf)
     XData = get(gd, 'XData');
