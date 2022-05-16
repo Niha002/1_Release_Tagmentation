@@ -16,22 +16,40 @@ Run the whole un-binned genome(pan-genome ensemble) first and run the binned gen
 
 ### Input: 
 Use the demo file in this directory which looks like
-> TGGAGTTTCCCCAGGAGGTCGAC
+> TTTAAATAAATAATATAAATTAC
 >
-> GCGCCGGGTTACTGCCTGACGGA
+> TTATTTAATATAAAGTAAAATAA
 >           
 >.         ...
 >
-> TCGCTGATCTCCAGGGTCAGGTC
+> TTTTTAGTTTTATTTTATAATAA
 >
-> GCTCGGTGCACCGGTGTTCGAGC
+> TTAAATTATTTAATATATAGTAT
 
-### Run:
-> Enter sequence-file name: Demo.txt 
+### Demo Run:
+> Enter sequence-file name: Demo_NIR(0-5).txt
 >
-> File contains #x sequences
+> File contains    6399 sequences.
 >
-> Enforce motif symmetry: Y
+> Number of sequences to process: 6399
+> Enforce motif symmetry? y
+>
+>
+> A counts = 71114, %A = 48.32
+>
+> C counts = 2942, %C =  2.00
+>
+> G counts = 2843, %G =  1.93
+>
+> T counts = 70278, %T = 47.75
+>
+> %AT in subseqs = 96.07
+>
+> %CG in subseqs =  3.93
+>
+> Generate score histogram and fitted pdf? y
+>
+> Output MAT file for fitted params and scoring matrix: T_Output_NIR(0-5)
 
 ### Code:
 1. Step 1 : Extracts first Subseq_length nucleotides from each read
@@ -44,13 +62,15 @@ Use the demo file in this directory which looks like
 1. Step 8 : Save EVD Parameters and scoring matrix to file
 
 ### Output: 
-The expected output is 
+The expected output for the demo run is attached as "T_Output_PSSM.jpg", "T_Output_PDF.jpg" and "T_Output_NIR(0-5)"
 * Image of PSSM: Sequence logo
+  
+  ![image](https://user-images.githubusercontent.com/55808380/168644334-6ec7f4fb-74b1-4873-820a-1127ad48d69b.png)
 
-  <img width="287" alt="image" src="https://user-images.githubusercontent.com/55808380/168490793-c56ce416-c447-40e0-83d6-8b0d4e8aed67.png">
 
 * Image of PDF: Histogram and gaussian fit 
+  
+  ![image](https://user-images.githubusercontent.com/55808380/168644509-71c64443-22cf-4c13-9c66-039963a2d123.png)
 
-  <img width="392" alt="image" src="https://user-images.githubusercontent.com/55808380/168490804-9ba766a6-d349-43d1-a18a-f142d8bd534e.png">
 
-* Matlab file s.mat: that has the PSSM profile
+* Matlab file s.mat: that has the fitted parameters and scoring matrix
