@@ -126,9 +126,9 @@ p1 = mean(Corrected) - diff;
 p2 = mean(Corrected) + diff;
 
 set(gca,'FontSize',35)
-title('Human Chromosome 5, window of 25000bp');
+title('Genome');
     ylabel('Relative Coverage');
-    xlabel('Coordinates in Mbp');
+    xlabel('Coordinates in bp');
 hold on
 plot(Coords(:,[1]),Corrected,'LineWidth',2.0,'DisplayName','Nu');
 yline(mean(Corrected),'r-','Mean','LineWidth',4.0, 'DisplayName','Mean') ;
