@@ -7,6 +7,7 @@ for i = 1: length(numlist)
     % Change n to chromosome number OR x, y in '' as 'Y'
     n = 0
     
+    % For X chromosome 23 and Y chromsosme 24
     if i == 23;
         n = 'X';
     elseif i == 24;
