@@ -32,9 +32,9 @@ for i = 1: length(numlist)
     % nu_t2t_corrected = (nu_T2T-mean(nu_T2T))/std(nu_T2T);
 
     % Hg38 +- 1std 
-%     diff = std(nu);
-%     p1 = mean(nu) - diff;
-%     p2 = mean(nu) + diff;
+    % diff = std(nu);
+    % p1 = mean(nu) - diff;
+    % p2 = mean(nu) + diff;
 
     % T2T +- 1std 
     diff_t2t = std(nu_T2T);
@@ -50,8 +50,8 @@ for i = 1: length(numlist)
 
     hold on
     % Hg38
-%     plot(Coords(:,[1]),nu,'LineWidth',1.5,'DisplayName','Nu','color', '#0072BD');
-%     yline(mean(nu),'r-','Mean','LineWidth',3.0, 'DisplayName','Mean');
+    % plot(Coords(:,[1]),nu,'LineWidth',1.5,'DisplayName','Nu','color', '#0072BD');
+    % yline(mean(nu),'r-','Mean','LineWidth',3.0, 'DisplayName','Mean');
     % T2T
     plot(Coords_T2T(:,[1]),nu_T2T,'LineWidth',1.5,'DisplayName','Nu_t2t', 'color', '#D95319');
     yline(mean(nu_T2T),'r-','Mean','LineWidth',3.0, 'DisplayName','Mean');
@@ -59,8 +59,8 @@ for i = 1: length(numlist)
     yticks([0.04,0.05,0.06,0.07,0.08,0.09,0.1])
 
     % 1 std deviation Hg38
-%     yline(p1,'k--', 'DisplayName','-σ');
-%     yline(p2,'k--','DisplayName','+σ');
+    % yline(p1,'k--', 'DisplayName','-σ');
+    % yline(p2,'k--','DisplayName','+σ');
     % T2T
     yline(p1_t2t,':','DisplayName','-σ');
     yline(p2_t2t,':','DisplayName','+σ');
