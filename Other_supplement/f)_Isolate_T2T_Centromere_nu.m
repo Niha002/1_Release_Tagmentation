@@ -1,3 +1,7 @@
+% This script isolates the centromere region of the T2T dataset
+% Find the coordinates by running the nu and coordinates(patterns if visible) for each chromosome and feed it to this code
+% Plots the nu values and cooedinates for the centromere(patterns if visible)
+
 % 1
 % r_start = 121225002;
 % r_stop  = 144800002;
@@ -49,14 +53,23 @@
 % 13
 % r_start = 125002;
 % r_stop  = 18675002;
+    % Pattern
+    % r_start = 5700002;
+    % r_stop  = 9350002;
 
 % 14
 % r_start = 25002;
 % r_stop  = 20575002;
+    % Pattern
+    % r_start = 2000002;
+    % r_stop  = 2825002;
 
 % 15
 % r_start = 1;
 % r_stop  = 21800002;
+    % Pattern
+    % r_start = 2425002;
+    % r_stop  = 4800002;
 
 % 16
 % r_start = 31475002;
@@ -81,20 +94,26 @@
 % 21
 % r_start = 1;
 % r_stop  = 13825002;
+    % Pattern
+    % r_start = 2950002;
+    % r_stop  = 5700002;
 
 % 22
 % r_start = 1;
 % r_stop  = 18725002;
+    % Pattern
+    % r_start = 4725002;
+    % r_stop  = 5750002;
 
 % X
-r_start = 52500002;
-r_stop  = 66750002;
+% r_start = 52500002;
+% r_stop  = 66750002;
 
 % Y
 % r_start = 8200002;
 % r_stop  = 13500002;
 
-n = "X";
+n = 22;
 OutputFileT2T1 = readmatrix("OutputFile_T2T_Chr"+n+".txt");
 
 % nu
