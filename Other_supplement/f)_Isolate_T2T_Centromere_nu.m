@@ -1,11 +1,6 @@
 % This script isolates the centromere region of the T2T dataset
 % Find the coordinates by running the nu and coordinates(patterns if visible) for each chromosome and feed it to this code
-% Plots the nu values and cooedinates for the centromere(patterns if visible)
-
-% Actual T2T bed file
-% Chromosome	chr1	chr2	chr3	chr4	chr5	chr6	chr7	chr8	chr9	chr10	chr11	chr12	chr13	chr14	chr15	chr16	chr17	chr18	chr19	chr20	chr21	chr22	chrX	chr Y
-% Start 	121625000	92300000	90800000	49700000	46825000	58275000	60400000	44250000	44950000	39625000	51025000	34600000	0	0	0	35825000	23425000	15650000	24575000	26375000	0	0	57825000	            8,200,002 
-% Stop	142250000	94700000	96425000	55300000	50950000	61050000	63725000	46325000	76700000	41925000	54475000	37200000	17500000	12700000	17700000	52225000	27575000	21125000	29775000	32975000	11300000	15700000	60925000	          13,500,002 
+% Plots the nu values and coordinates for the centromere(patterns if visible)
 
 % 1
 % r_start = 121225002;
